@@ -1,0 +1,6 @@
+setps to run projects
+
+npm init
+spm start
+
+refer package.json for depandacy check
