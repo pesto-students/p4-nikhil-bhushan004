@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>memorizeSum</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		
+
+		function memorizeSum (...args) {
+
+		  let total = 0;
+		  let numbers = args;
+
+		  if(localStorage.getItem(numbers))
+		  	return localStorage.getItem(numbers);
+
+		  for(var key in args) {
+		    total += args[key];
+		  }
+
+		  localStorage.setItem(numbers, total);
+		  
+		  return total;
+		}
+
+		console.log(memorizeSum(100, 100));
+
+	</script>
+
+</body>
+</html>
