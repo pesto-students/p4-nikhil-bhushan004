@@ -1,4 +1,9 @@
+// Using Async/Await and Generators, create separate functions and achieve the same functionality.
+// Execute 3 callback functions asynchronously, for example doTask1(), doTask2() and doTask3().
+
+
 //execution using Async Await
+
 async function completeTaskAsyncAwait() {
 
   let doTask1 = new Promise(function(resolve, reject) {
